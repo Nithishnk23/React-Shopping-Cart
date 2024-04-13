@@ -1,0 +1,93 @@
+.product-cart {
+    width: 250px;
+    height: 300px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    overflow: hidden;
+    gap: 10px;
+    padding: 5px;
+}
+.product-cart > .thumbnails {
+    width: 100%;
+    height: 150px;
+    background: #000;
+    align-self: flex-start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s all;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.product-cart > .thumbnails > img {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    object-fit: contain;
+    -webkit-user-drag: none;
+}
+/* title */
+.product-cart > .names {
+    width: 100%;
+    height: 50px;
+    /* background: crimson; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 20px;
+    text-transform: capitalize;
+}
+.product-cart > .names > h2 {
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: normal;
+}
+/* action */
+.product-cart > .actions {
+    width: 100%;
+    height: 64px;
+    /* background-color: forestgreen; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+}
+.product-cart > .actions > .price {
+    height: 100%;
+    flex: 2;
+    background: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    gap: 5px;
+    user-select: none;
+    padding: 0px 20px;
+
+    
+    
+}
+.product-cart > .actions > .button {
+    height: 100%;
+    flex: 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    transition: 0.2s all;
+    border: 1px solid forestgreen;
+    border-radius: 10px;
+    color: forestgreen;
+    user-select: none;
+}
+.product-cart > .actions > .button:hover{
+    background-color: forestgreen;
+    color: white;
+    cursor: pointer;
+}
